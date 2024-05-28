@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react';
+import '@/shared/style/tdd-storybook.scss';
 
 const preview: Preview = {
   parameters: {

@@ -1,0 +1,12 @@
+@import 'base';
+@import '../components/test-button/index';
+
+.main-container {
+  height: 100%;
+  min-height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  padding: 20px;
+}
