@@ -1,6 +1,6 @@
 // Replace your-framework with the name of your framework
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+import { action } from '@storybook/addon-actions';
 
 import TestButton from '@/shared/components/test-button';
 
@@ -15,7 +15,12 @@ const meta: Meta<typeof TestButton> = {
   // autodocs를 생성함
   tags: ['autodocs'],
   // 👇 Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked
-  args: { onClick: fn(), label: 'string | React.ReactNode', intent: 'primary' },
+  // args type을 지정함
+  args: {
+    onClick: action('clicked'),
+    label: 'string | React.ReactNode',
+    intent: 'default',
+  },
 };
 
 export default meta;

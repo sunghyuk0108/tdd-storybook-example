@@ -1,15 +1,45 @@
 .button-wrap {
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   gap: 10px;
 }
+.buttons {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
 .test-button {
-  width: 100%;
-  padding: 12px 24px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
+  background-color: #f2f4f6;
+  color: #1a1e27;
+  overflow: hidden;
+  &[data-size='s'] {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 3px 8px;
+  }
+  &[data-size='m'] {
+    width: 38px;
+    padding: 10px 20px;
+  }
+  &[data-size='l'] {
+    width: 64px;
+    padding: 12px 24px;
+  }
+  &[data-size='xl'] {
+    width: 64px;
+    padding: 12px 24px;
+  }
+  &[data-size='xxl'] {
+    width: 100%;
+    padding: 12px 24px;
+  }
   &[data-intent='primary'] {
     background-color: #5d44da;
     color: #fff;
