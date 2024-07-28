@@ -11,7 +11,9 @@ export default defineConfig({
   root: '.',
   resolve: {
     alias: {
-      '@': '/src', // `@`를 사용하여 소스 디렉터리를 참조
+      '@': resolve(__dirname, 'src'), // `@`를 사용하여 소스 디렉터리를 참조
+      '@/shared': resolve(__dirname, 'src/shared'),
+      '@/stories': resolve(__dirname, 'src/stories'),
     },
   },
   test: {

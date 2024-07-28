@@ -11,3 +11,15 @@
   padding: 20px;
   overflow: hidden;
 }
+
+// page
+// button-wrap
+// roulette-wrap
+.roulette-wrap {
+  background-color: green;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
